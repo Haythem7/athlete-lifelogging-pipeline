@@ -1,0 +1,40 @@
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+.env
+*.env.*
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+# Strip notebook outputs before committing (cell outputs can contain raw data)
+# Run: jupyter nbconvert --clear-output --inplace athlete_pipeline.ipynb
+
+# ── Outputs / generated files ─────────────────────────────────
+outputs/
+*.log
+food_cache_cv.json
+test_dataset.csv
+*.csv
+*.xlsx
+*.json
+
+# ── Raw data — NEVER commit participant data folders ──────────
+# Covers p01/, p03/, p05/, etc.
+p*/
+data/
+raw/
+dataset*/
+
+# ── Sensitive / credentials ───────────────────────────────────
+# No URLs, tokens, or API keys should be committed
+secrets.txt
+*.token
+*.key
+.netrc
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
